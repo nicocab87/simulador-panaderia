@@ -17,7 +17,8 @@ const alfajor = new producto("alfajor", "250")
 
 //-----------------------------------------------------------//
 
-alert("Hola, buenos dias! Que vas a llevar?");
+alert("Hola, buenos dias! Que vas a llevar? Su saldo inicial es de $5000.");
+
 
 function comprar () {
     console.log("-----------------")
@@ -55,7 +56,7 @@ function comprar () {
     break;
 
     case "2":
-            cantidadFactura = parseFloat(prompt ("El precio de la Factura es de " + factura.precio + " cada una. Cuantas quieres?"))
+            cantidadFactura = parseFloat(prompt ("El precio de la factura es de " + factura.precio + " cada una. Cuantas quieres?"))
 
             let dineroFactura = cantidadFactura * factura.precio
 
@@ -71,7 +72,7 @@ function comprar () {
     break;
 
     case "3":
-            cantidadPan = parseFloat(prompt ("El precio de la Pan es de " + pan.precio + " el kilo. Cuantos kilos quieres?"))
+            cantidadPan = parseFloat(prompt ("El precio de la pan es de " + pan.precio + " el kilo. Cuantos kilos quieres?"))
 
             let dineroPan = cantidadPan * pan.precio
 
@@ -104,9 +105,9 @@ function comprar () {
     break;
 
     case "5": 
-        console.log("Hasta ahora llevas comprado: " + cantidadCriollo + " kilos de criollos")
+        console.log("Hasta ahora llevas comprado: " + cantidadCriollo + " kilo de criollos")
         console.log("Hasta ahora llevas comprado: " + cantidadFactura + " facturas")
-        console.log("Hasta ahora llevas comprado: " + cantidadPan + " kilos de pan")
+        console.log("Hasta ahora llevas comprado: " + cantidadPan + " kilo de pan")
         console.log("Hasta ahora llevas comprado: " + cantidadAlfajor + " alfajores")
         console.log("Y tu saldo es de $" + dinero)
         comprar()
