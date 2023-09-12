@@ -14,10 +14,6 @@ const factura = new producto("factura", "180")
 const pan = new producto("pan", "700")
 const alfajor = new producto("alfajor", "250")
 
-/* let dineroCriollo = cantidadCriollo * criollo.precio
-let dineroFactura = cantidadFactura * factura.precio
-let dineroPan = cantidadPan * pan.precio
-let dineroAlfajor = cantidadAlfajor * alfajor.precio */
 
 //-----------------------------------------------------------//
 
@@ -136,3 +132,32 @@ function comprar () {
 
 
 comprar();
+
+
+/*    En switch quise intentar usar esta funcion para los 4 casos, cosa de no repetir lo mismo en cada uno, pero cuando iba al caso 5, la cantidadProducto no me modificaba el valor de cantidadCriollo, por ejemplo, me salía undefined
+
+
+    function pagar(cantidadProducto,precioProducto,dineroProducto,){
+                cantidadProducto = parseFloat(prompt ("El precio del criollo es de " + precioProducto + " el kilo. Cuantos kilos quieres?"))
+
+                dineroProducto = cantidadProducto * precioProducto
+
+                if(dineroProducto > dinero){
+                    console.log("Lo siento, no tienes dinero suficiente, usted solo tiene " + dinero)
+                    comprar();
+                }else{
+                    dinero-= dineroProducto
+                    console.log("Exelente! Has comprado " + cantidadProducto + " kilos de crillos.")
+                    console.log("Su saldo restante es de " + dinero)
+                    comprar()
+                }
+            
+    }
+
+    switch (eleccion){
+        case "1":
+            pagar(cantidadCriollo,criollo.precio,dineroCriollo);
+            
+            
+            
+*/
